@@ -7,7 +7,15 @@
 //
 
 import UIKit
-
-class SectionHeaderCollectionReusableView: UICollectionReusableView {
+    class SectionHeaderCollectionReusableView: UICollectionReusableView
+    {
+        @IBOutlet weak var sectionTitleLabel: UILabel!
         
-}
+        var movie: Movie! {
+            didSet {
+                sectionTitleLabel.text = movie.section.uppercased()
+            }
+        }
+        
+    }
+

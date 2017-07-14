@@ -7,3 +7,14 @@
 //
 
 import Foundation
+
+
+import UIKit
+
+struct Movie {
+    var title: String
+    var url: String
+    var image: UIImage
+    var section: String
+}
+
